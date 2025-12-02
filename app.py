@@ -159,7 +159,12 @@ def main():
                 
                 mode_val = analyzer.mode(selected_col)
                 if not mode_val.empty:
-                    st.info(f"📍 Mode: {mode_val.iloc[0]:.2f}")
+                    # Format mode value appropriately based on type
+                    mode_value = mode_val.iloc[0]
+                    if isinstance(mode_value, (int, float)):
+                        st.info(f"📍 Mode: {mode_value:.2f}")
+                    else:
+                        st.info(f"📍 Mode: {mode_value}")
                 
                 st.subheader("All Columns Summary")
                 st.dataframe(analyzer.summary_statistics(), use_container_width=True)
