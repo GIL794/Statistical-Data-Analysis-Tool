@@ -44,6 +44,23 @@ pip install -r requirements.txt
 
 ## Usage
 
+### 🌐 Web Interface (Streamlit)
+
+The easiest way to use the tool is through the interactive web interface:
+
+```bash
+streamlit run app.py
+```
+
+This will open a web browser with an interactive dashboard where you can:
+- Upload your data files (CSV, Excel, JSON)
+- Use sample data for exploration
+- Perform statistical analysis through an intuitive interface
+- Visualize data with interactive charts
+- Run hypothesis tests with a few clicks
+
+**No coding required!**
+
 ### As a Python Library
 
 ```python
