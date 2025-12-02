@@ -9,7 +9,8 @@ from statistical_analysis import StatisticalAnalyzer
 import matplotlib.pyplot as plt
 
 # Set style for better-looking plots
-plt.style.use('seaborn-v0_8-darkgrid')
+import seaborn as sns
+sns.set_theme(style='darkgrid')
 
 
 def create_sample_dataset():
